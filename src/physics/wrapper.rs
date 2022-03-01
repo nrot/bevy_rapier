@@ -2,6 +2,7 @@ use bevy::prelude::*;
 use std::ops::{Deref, DerefMut};
 macro_rules! impl_component_wrapper(
     ($Wrapper:ident, $Inner: ty) => {
+        // #[derive(Component, Debug, Default, Clone, Reflect)]
         #[derive(Component)]
         pub struct $Wrapper(pub $Inner);
 
