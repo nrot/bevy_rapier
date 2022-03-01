@@ -370,7 +370,7 @@ pub(crate) fn sync_transform(pos: &Isometry<f32>, scale: f32, transform: &mut Tr
 
 #[cfg(feature = "dim3")]
 pub(crate) fn sync_transform(pos: &Isometry<f32>, scale: f32, transform: &mut Transform) {
-    let (tra, rot) = (*pos).into();
+    let (tra, rot): (Vec3, Quat) = (*pos).into();
     transform.translation.x = tra.x * scale;
     transform.translation.y = tra.y * scale;
     transform.translation.z = tra.z * scale;
