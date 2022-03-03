@@ -29,7 +29,7 @@ wasm-bindgen = ["rapier3d/wasm-bindgen"]
 
 [dependencies]
 # bevy = { version = "0.6", default-features = false }
-bevy = {git = "https://github.com/nrot/bevy", branch = "main", default-features = false}
+bevy = {git = "https://github.com/nrot/bevy", branch = "gltf-extras", default-features = false}
 nalgebra = {version = "0.30.1", features = ["convert-glam020"]}
 # Don't enable the default features because we don't need the ColliderSet/RigidBodySet
 rapier3d = {version = "^0.12.0-alpha.0", default-features = false, features = ["dim3", "f32"]}
